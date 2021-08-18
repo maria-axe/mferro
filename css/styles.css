@@ -1,0 +1,147 @@
+/* var cores */
+
+:root {
+    --branco: #FFF;
+	--primary-color: #FD8A77;
+	--secundary-color: #3E1130;
+	--tercery-color: #8dbf97;
+	--quartenary-color: #5d5d5d;
+
+
+    --Lato: 'lato', sans-serif;
+}
+
+
+body{
+	margin:0;
+	font-family: var(--Lato); 
+	font-size: 9pt;
+}
+
+
+a {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul{
+	padding: 0;
+	margin:0;
+}
+
+li{
+	list-style-type: none;
+}
+
+p{
+	margin: 0;
+}
+
+h1, h2, h3, h4{
+	margin: 0;
+}
+
+/*Header*/
+
+header .top-header {
+	background-color: var(--secundary-color);
+	display: flex;
+    justify-content: center;
+} 
+
+header .top-header-content {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+
+}
+
+header .top-header-content .block-right, header .top-header-content .block-left  {
+	display: flex;
+	margin: 10px;
+}
+
+header .top-header-content .block-right li, header .top-header-content .block-left li {
+	margin-right: 10px;
+
+}
+
+header .tel {
+	text-transform: uppercase;
+}
+
+header .top-header-content .block-right li a, header .top-header-content .block-left li a {
+	color: var(--branco);
+}
+
+header .top-header-content .block-right li a:hover, header .top-header-content .block-left li a:hover {
+	color: var(--primary-color);
+}
+header .top-header-content .block-right li:last-child, header .top-header-content .block-left li:last-child  {
+	margin-right: 0;
+}
+
+header .top-header-content .block-left li .fas {
+	margin-right: 10px;
+}
+
+header .social {
+	padding: 6px;
+}
+
+i {
+	color: var(--primary-color);
+}
+
+.top-header-container {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	width: 1200px;
+	margin: auto;
+}
+
+.top-header-container .top-header-logo {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.top-header-container .top-header-logo img {
+	margin-right: 10px;
+}
+
+.top-header-container .top-header-logo .welcome-message {
+	color: var(--quartenary-color);
+}
+
+.top-header-container .top-header-search {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin: auto;
+}
+
+.search {
+	
+}
+
+.top-header-container .top-header-links ul {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	
+}
+
+.top-header-container .top-header-links a {
+	color: var(--secundary-color);
+	margin: 10px;
+} 
+
+.top-header-container .top-header-links .fa {
+	margin-right: 4px;
+} 
