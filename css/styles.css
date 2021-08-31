@@ -347,6 +347,11 @@ header .top-header-content a:hover i{
 	
 }
 
+.mini-cart-wrapper .add-to-cart {
+	max-width: 100%;
+	margin: 10px 9px;
+}
+
 .add-to-cart {
 	padding: 8px 45px;
     border-radius: 50px;
@@ -359,11 +364,19 @@ header .top-header-content a:hover i{
     text-transform: lowercase;
 	max-width: 160px;
 	cursor: pointer;
+	
 }
 
 .add-to-cart:hover {
 	background-color: var(--primary-color);
 	
+}
+
+.mini-cart-wrapper .total-price {
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px;
 }
 
 .product-image-wrapper {
