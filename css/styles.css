@@ -208,6 +208,24 @@ header .top-header-content a:hover i{
 .top-header-links .mini-cart {
 	position: relative;
 	background-color: var(--branco);
+	
+}
+
+.top-header-links .number-cart {
+	background-color: var(--tertiary-color);
+	font-weight: bold;
+	position: absolute;
+    border-radius: 50px;
+    font-size: 10px;
+    color: var(--branco);
+    top: 0;
+    right: 22px;
+	justify-content: center;
+	height: 20px;
+    width: 20px;
+	display: flex;
+	align-items: center
+
 }
 
 .top-header-links .mini-cart-wrapper {
@@ -315,10 +333,26 @@ header .top-header-content a:hover i{
 	display: block;
 }
 
+.products .product-image-wrapper img {
+	transition: 0.5s all;
+	cursor: pointer;
+	display: block;
+}
+
+.products:hover .product-image-wrapper img{
+	transform: scale(1.1);
+	
+}
+
+.products:hover .add-to-cart {
+	transform: scale(1.1);
+}
+
 .section-products {
 	width: 1200px;
     margin: auto;
 	margin-top: 35px;
+	
 }
 
 .section-products .products-clothes {
@@ -366,12 +400,14 @@ header .top-header-content a:hover i{
     text-transform: lowercase;
 	max-width: 160px;
 	cursor: pointer;
+	transition: 0.5s all;
+	
+  
 	
 }
 
 .add-to-cart:hover {
 	background-color: var(--primary-color);
-	
 }
 
 .mini-cart-wrapper .total-price {
@@ -383,6 +419,7 @@ header .top-header-content a:hover i{
 
 .product-image-wrapper {
 	position: relative;
+	overflow: hidden;
 }
 
 .product-image-wrapper .wish-list {
@@ -395,6 +432,7 @@ header .top-header-content a:hover i{
 	padding: 10px;
 	font-weight: bold;
 	border-radius: 50px;
+	z-index: 1;
 
 }
 
@@ -421,6 +459,7 @@ header .top-header-content a:hover i{
 	left: 0;
 	font-weight: bold;
 	border-radius: 50px;
+	z-index: 1;
 	
 }
 
@@ -439,6 +478,34 @@ header .top-header-content a:hover i{
 footer {
 	text-align: center;
 	margin: none;
+}
+
+.section-rodape {
+	display: flex;
+	justify-content: space-between;
+    padding: 120px;
+	flex-direction: unset;
+	border-top: 3px solid var(--secundary-color);
+	
+
+}
+
+.section-rodape .block {
+	display: flex;
+}
+
+.block-selos img{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+    margin: -1px auto;
+}
+
+.block-selos {
+	display: flex;
+	justify-content: center
+
 }
 
 .container-contacts {
