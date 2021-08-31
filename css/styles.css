@@ -251,6 +251,7 @@ header .top-header-content a:hover i{
     display: flex;
     align-items: center;
     justify-content: space-between;
+	pointer-events: none;
 }
 
 .owl-carousel.owl-loaded.owl-drag {
@@ -267,6 +268,7 @@ header .top-header-content a:hover i{
 	background-color: var(--secundary-color) !important;
 	border-radius: 8px;
 	margin: 5px;
+	pointer-events: initial;
 }
 
 .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
