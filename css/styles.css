@@ -47,7 +47,7 @@ h1, h2, h3, h4{
 	margin: 0;
 }
 
-/*Header*/
+/*___Header___*/
 
 header .top-header {
 	background-color: var(--secundary-color);
@@ -263,6 +263,8 @@ header .top-header-content a:hover i{
 	z-index: 2; /* posição: Atrás ou frente de algum elemento. */
 }
 
+/*___CAROUSEL___*/
+
 .owl-nav {
 	position: absolute;
     width: 100%;
@@ -369,7 +371,8 @@ header .top-header-content a:hover i{
 	font-weight: bold;
     text-transform: uppercase;
 	font-size: 15px;
-	justify-content: center
+	justify-content: center;
+	margin-top: 30px;
 	
 }
 
@@ -425,8 +428,8 @@ header .top-header-content a:hover i{
 
 .product-image-wrapper .wish-list {
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	left: 50px;
+	top: 0;
 	display: none;
 	background-color: var(--tertiary-color);
 	color: var(--branco);
@@ -473,6 +476,62 @@ header .top-header-content a:hover i{
 	width: 1200px;
     margin: auto;
 	margin-top: 35px;
+}
+/* NEWS LETTER */
+
+
+.section-newsletter .formnewsletter span {
+	font-size: 15px;
+	color: var(--branco);
+	font-weight: bold;
+	padding:20px;
+	text-transform: uppercase;
+}
+
+.formnewsletter input {
+		height: 50px;
+		padding: 15px;
+		box-sizing: border-box;
+		border: 0;
+		border-radius: 5px;
+		margin-right: 10px;
+	
+}
+
+.formnewsletter input:focus-visible {
+	outline: none;
+}
+
+
+
+.section-newsletter .formnewsletter {
+	display: flex;
+	background-color: var(--tertiary-color);
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+
+}
+
+.section-newsletter .formnewsletter .input-button {
+	border-radius: 5px;
+	height: 50px;
+	display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-newsletter #button-register {
+	color: var(--branco);
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
 }
 
 /*_____FOOTER_____*/
@@ -545,22 +604,18 @@ footer {
 	cursor: pointer;
 }
 
-.section-rodape .block-video {
-	width: 100%;
-}
-
 .block-selos img{
 	display: flex;
     align-items: center;
     justify-content: center;
-	width: 130px;
+	max-width: 130px;
     margin: -1px auto;
 }
 
 .block-selos {
 	display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 6px 0px;
     width: 100%;
 }
@@ -576,3 +631,15 @@ footer {
 	font-size: 13px;
 }
 
+.block-selos img.footer-image-payment {
+	max-width: 260px;
+}
+
+/*MOBILE*/
+
+@media screen and (min-width: 1200) {
+    .section-rodape  {
+		max-width: 600px;
+
+	}
+}

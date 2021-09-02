@@ -54,5 +54,3 @@ $('.mini-cart').on('click', function(){
     $(this).find('#mini-cart-wrapper').toggle(); //toggle mostra e oculta o elemento
 });
 
-
-    
