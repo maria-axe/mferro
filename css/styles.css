@@ -62,7 +62,8 @@ header .top-header {
 header .top-header-content {
 	display: flex;
 	justify-content: space-between;
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
 
 }
 
@@ -109,7 +110,7 @@ header .top-header-content a:hover i{
 	display: flex;
 	align-items: center;
     justify-content: center;
-	width: 1200px;
+	max-width: 1200px;
 	margin: auto;
 
 }
@@ -224,7 +225,7 @@ header .top-header-content a:hover i{
 	height: 20px;
     width: 20px;
 	display: flex;
-	align-items: center
+	align-items: center;
 
 }
 
@@ -282,7 +283,8 @@ header .top-header-content a:hover i{
 }
 
 .owl-prev, .owl-next {
-	width: 55px;
+	max-width: 55px;
+	width: 100%;
 	height: 55px;
 	font-size: 70px !important; 
 	background-color: var(--secundary-color) !important;
@@ -352,7 +354,8 @@ header .top-header-content a:hover i{
 }
 
 .section-products {
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
     margin: auto;
 	margin-top: 35px;
 	
@@ -468,12 +471,13 @@ header .top-header-content a:hover i{
 }
 
 .carousel-banners-second {
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
     margin: auto;
 }
 
 .section-products-second {
-	width: 1200px;
+	max-width: 1200px;
     margin: auto;
 	margin-top: 35px;
 }
@@ -526,12 +530,17 @@ header .top-header-content a:hover i{
 	color: var(--branco);
     background-color: var(--secundary-color);
     border-radius: 5px;
-    width: 100px;
+    max-width: 100px;
     height: 50px;
     font-weight: bold;
     font-size: 15px;
     border: none;
     cursor: pointer;
+	padding: 15px;
+}
+
+.section-newsletter #button-register:hover {
+	background-color: var(--primary-color);
 }
 
 /*_____FOOTER_____*/
@@ -551,10 +560,11 @@ footer {
 	font-size: 13px;
     font-weight: bold;
 	align-content: center;
-    align-items: center;
+    align-items: flex-start;
 	justify-content: center;
 	margin-bottom: 20px;
-	width: 1200px;
+	max-width: 1200px;
+	width: 100%;
     margin: auto;
 }
 
@@ -582,7 +592,7 @@ footer {
 }
 
 .section-rodape ul {
-	width: 100%;
+	max-width: 100%;
 	margin-bottom: 10px;
 	flex-wrap: wrap;
 	display: flex;
@@ -609,6 +619,7 @@ footer {
     align-items: center;
     justify-content: center;
 	max-width: 130px;
+	width: 100%;
     margin: -1px auto;
 }
 
@@ -617,7 +628,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 6px 0px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .block-selos-footer{
