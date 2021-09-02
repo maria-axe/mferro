@@ -389,7 +389,8 @@ header .top-header-content a:hover i{
 
 .mini-cart-wrapper .add-to-cart {
 	max-width: 100%;
-	margin: 10px 9px;
+	margin: 10px 24px;
+	padding: 5px 30px;
 }
 
 .add-to-cart {
@@ -405,13 +406,12 @@ header .top-header-content a:hover i{
 	max-width: 160px;
 	cursor: pointer;
 	transition: 0.5s all;
-	
-  
-	
+
 }
 
 .add-to-cart:hover {
 	background-color: var(--primary-color);
+	transform: scale(1.1);
 }
 
 .mini-cart-wrapper .total-price {
