@@ -233,11 +233,26 @@ header .top-header-content a:hover i{
 	position: absolute;
 	background-color: var(--branco);
 	right: 0;
-	width: 225px;
+	width: 260px;
 	border-radius: 15px;
-    border: 2px solid var(--secundary-color);
+    border: 3px solid var(--secundary-color);
+	
 
 }
+
+.top-header-links .mini-cart-wrapper::before {
+	content: "";
+  	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	border-bottom: 10px solid var(--secundary-color);
+	position: absolute;
+	top: -13px;
+	right: 28px;
+	
+	
+
+}
+
 
 .top-header-links .mini-cart-wrapper .items {
 	display: flex;
@@ -253,6 +268,16 @@ header .top-header-content a:hover i{
 	width: 100%;
 	justify-content: space-between;
 	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-evenly
+
+
+}
+
+.top-header-links .mini-cart-wrapper .item span {
+	font-size: 13px;
+	color: var(--preto);
+    font-weight: 500;
 }
 
 .top-header-links .mini-cart-wrapper .item img {
@@ -321,10 +346,16 @@ header .top-header-content a:hover i{
     color: var(--branco);
     font-weight: bold;
     text-transform: uppercase;
+	align-items: center;
 }
 
 .menu-nav a:hover {
 	color: var(--primary-color);
+}
+
+.menu-nav i {
+	margin-right: 10px;
+    font-size: 20px;
 }
 
 .products {
@@ -392,7 +423,7 @@ header .top-header-content a:hover i{
 
 .mini-cart-wrapper .add-to-cart {
 	max-width: 100%;
-	margin: 10px 24px;
+	margin: 15px 42px;
 	padding: 5px 30px;
 }
 
@@ -515,6 +546,12 @@ header .top-header-content a:hover i{
 	align-items: center;
 	padding: 10px;
 
+}
+
+.section-newsletter .newsletteropen {
+	font-size: 60px;
+	background-color: var(--tertiary-color);
+	color: var(--secundary-color);
 }
 
 .section-newsletter .formnewsletter .input-button {
