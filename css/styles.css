@@ -71,12 +71,19 @@ header .top-header-content {
     header .top-header-content  {
 		flex-direction: column;
 		align-items: center;
+		display: flex;
 	}
 }
 
 header .top-header-content .block-right, header .top-header-content .block-left  {
 	display: flex;
 	margin: 10px;
+}
+
+@media screen and (max-width: 610px) {
+    header .top-header-content .block-right, header .top-header-content .block-left  {
+		margin: 0px;
+	}
 }
 
 header .tel {
@@ -88,6 +95,20 @@ header .top-header-content .block-right li a, header .top-header-content .block-
 	padding: 10px;
 	text-transform: uppercase;
 
+}
+
+@media screen and (max-width: 610px) {
+    header .top-header-content .block-right li a, header .top-header-content .block-left li a  {
+		align-items: center;
+		box-sizing: border-box;
+        display: flex;
+
+	}
+	header .top-header-content .block-right {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
 }
 
 header .top-header-content .block-right li a:hover, header .top-header-content .block-left li a:hover {
@@ -195,6 +216,12 @@ header .top-header-content a:hover i{
 	align-items: center;
     justify-content: center;
 	
+}
+
+@media (max-width:900px) {
+	.top-header-container .top-header-links ul {
+		margin-top: 10px;	
+	}
 }
 
 .top-header-container .top-header-links a {
@@ -348,6 +375,10 @@ header .top-header-content a:hover i{
 	top: -15px;
 	color: var(--branco);
 }
+
+/*___Menu___*/
+
+
 .menu-nav ul {
 	display: flex;
     margin: 0px;
@@ -385,6 +416,24 @@ header .top-header-content a:hover i{
 	margin-right: 10px;
     font-size: 20px;
 }
+
+.btn-mobile {
+	display: none;
+}
+
+@media (max-width:600px) {
+	.btn-mobile {
+		display: block;
+		background: transparent;
+		padding: 10px;
+		border: none;
+		color: var(--branco);
+	}
+	.menu-nav ul{
+		display: none;
+	}
+}
+
 
 .products {
 	display: flex;
@@ -529,6 +578,12 @@ header .top-header-content a:hover i{
 	
 }
 
+@media screen and (max-width: 900px) {
+	.carousel-banners {
+		display: none;
+	}
+}
+
 .carousel-banners-second {
 	max-width: 1200px;
 	width: 100%;
@@ -552,14 +607,32 @@ header .top-header-content a:hover i{
 }
 
 .formnewsletter input {
-		height: 50px;
-		padding: 15px;
-		box-sizing: border-box;
-		border: 0;
-		border-radius: 5px;
-		margin-right: 10px;
+	height: 50px;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 0;
+	border-radius: 5px;
+	margin-right: 10px;
 	
 }
+
+@media screen and (max-width: 536px) {
+	.formnewsletter input  {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10px;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.formnewsletter input  {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
 
 .formnewsletter input:focus-visible {
 	outline: none;
@@ -614,6 +687,12 @@ header .top-header-content a:hover i{
     border: none;
     cursor: pointer;
 	padding: 15px;
+}
+
+@media screen and (max-width: 536px) {
+    .section-newsletter #button-register {
+		margin-top: 10px;
+	}
 }
 
 .section-newsletter #button-register:hover {

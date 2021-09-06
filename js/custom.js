@@ -15,9 +15,6 @@ $(document).ready( function(){
 
     });
 
-
-
-
     $('.products-clothes').owlCarousel({
         loop:true,
         margin:10,
@@ -30,16 +27,16 @@ $(document).ready( function(){
         responsive:{
             0:{
                 items:2,
-                nav:true
+                nav:false
             },
             600:{
                 items:3,
-                nav:true
+                nav:false
             },
             1000:{
                 items:4,
                 nav:true,
-                loop:false
+                loop:true
             }
         }
     });
@@ -47,7 +44,7 @@ $(document).ready( function(){
     $('.banners-second').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         dots:true,
         autoplay:true,
         autoplayTimeout:3000,
@@ -56,16 +53,16 @@ $(document).ready( function(){
         responsive:{
             0:{
                 items:2,
-                nav:true
+                nav:false
             },
             600:{
                 items:3,
-                nav:true
+                nav:false
             },
             1000:{
                 items:4,
-                nav:true,
-                loop:false
+                nav:false,
+                loop:true
             }
         }
     });
@@ -82,16 +79,16 @@ $(document).ready( function(){
         responsive:{
             0:{
                 items:2,
-                nav:true
+                nav:false
             },
             600:{
                 items:3,
-                nav:true
+                nav:false
             },
             1000:{
-                items:4,
+                items:3,
                 nav:true,
-                loop:false
+                loop:true
             }
         }
     });
@@ -101,5 +98,14 @@ $(document).ready( function(){
 
 $('.mini-cart').on('click', function(){
     $(this).find('#mini-cart-wrapper').toggle(); //toggle mostra e oculta o elemento
+});
+
+
+// MENU
+
+$('.btn-mobile').on('click', function(){
+    let nav = $('.menu-nav ul');
+    nav.toggle();
+
 });
 
