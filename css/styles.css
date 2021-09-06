@@ -800,13 +800,3 @@ footer {
 .block-selos img.footer-image-payment {
 	max-width: 260px;
 }
-
-/*MOBILE*/
-
-@media screen and (max-width: 900px) {
-    .section-rodape  {
-		flex-direction: column;
-		align-items: center;
-
-	}
-}
