@@ -434,6 +434,7 @@ header .top-header-content a:hover i{
 	}
 }
 
+/*___PRODUCTS___*/
 
 .products {
 	display: flex;
@@ -497,6 +498,8 @@ header .top-header-content a:hover i{
 	margin: 10px;
 	
 }
+
+/*___MINI CART*/
 
 .mini-cart-wrapper .add-to-cart {
 	max-width: 100%;
@@ -595,8 +598,8 @@ header .top-header-content a:hover i{
     margin: auto;
 	margin-top: 35px;
 }
-/* NEWS LETTER */
 
+/* NEWS LETTER */
 
 .section-newsletter .formnewsletter span {
 	font-size: 15px;
@@ -722,6 +725,14 @@ footer {
 	width: 100%;
     margin: auto;
 }
+
+@media screen and (max-width: 900px) {
+    .section-rodape  {
+		flex-direction: column;
+		align-items: center;
+
+	}
+} 
 
 .section-rodape .block {
 	display: flex;
