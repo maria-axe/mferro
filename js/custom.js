@@ -12,6 +12,8 @@ $(document).ready( function(){
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true
+        
+
     });
 
     $('.banners-second').owlCarousel({
@@ -22,7 +24,23 @@ $(document).ready( function(){
         dots:true,
         autoplay:true,
         autoplayTimeout:3000,
-        autoplayHoverPause:true
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:true
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:false
+            }
+        }
     });
 
     $('.products-shoes').owlCarousel({
@@ -33,18 +51,49 @@ $(document).ready( function(){
         dots:true,
         autoplay:true,
         autoplayTimeout:3000,
-        autoplayHoverPause:true
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:true
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:false
+            }
+        }
     });
 
     $('.products-clothes').owlCarousel({
-        items:4,
         loop:true,
         margin:10,
         nav:true,
         dots:false,
         autoplay:false,
         autoplayTimeout:3000,
-        autoplayHoverPause:true
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:true
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:false
+            }
+        }
     });
 });
 

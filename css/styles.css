@@ -67,6 +67,13 @@ header .top-header-content {
 
 }
 
+@media screen and (max-width: 900px) {
+    header .top-header-content  {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 header .top-header-content .block-right, header .top-header-content .block-left  {
 	display: flex;
 	margin: 10px;
@@ -115,6 +122,13 @@ header .top-header-content a:hover i{
 
 }
 
+@media screen and (max-width: 900px) {
+    .top-header-container  {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 .top-header-container .top-header-logo {
 	display: flex;
 	align-items: center;
@@ -145,6 +159,12 @@ header .top-header-content a:hover i{
 	border: none;
 	margin-left: 15px;
 
+}
+
+@media screen and (max-width: 610px) {
+    .input-search  {
+		width: 217px;
+	}
 }
 
 .input-search:focus-visible {
@@ -333,6 +353,14 @@ header .top-header-content a:hover i{
     margin: 0px;
     justify-content: center;
 } 
+
+@media screen and (max-width: 610px) {
+    .menu-nav ul  {
+		flex-direction: column;
+		align-items: center;
+
+	}
+}
 
 .menu-nav {
 	background-color: var(--secundary-color);
@@ -548,6 +576,13 @@ header .top-header-content a:hover i{
 
 }
 
+@media screen and (max-width: 900px) {
+    .section-newsletter .formnewsletter  {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 .section-newsletter .newsletteropen {
 	font-size: 60px;
 	background-color: var(--tertiary-color);
@@ -555,12 +590,17 @@ header .top-header-content a:hover i{
 }
 
 .section-newsletter .formnewsletter .input-button {
-	border-radius: 5px;
-	height: 50px;
 	display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 536px) {
+    .section-newsletter .formnewsletter .input-button  {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .section-newsletter #button-register {
@@ -592,7 +632,6 @@ footer {
 .section-rodape {
 	display: flex;
 	justify-content: space-between;
-    padding: 20px;
 	flex-direction: unset;
 	font-size: 13px;
     font-weight: bold;
@@ -685,9 +724,10 @@ footer {
 
 /*MOBILE*/
 
-@media screen and (min-width: 1200) {
+@media screen and (max-width: 900px) {
     .section-rodape  {
-		max-width: 600px;
+		flex-direction: column;
+		align-items: center;
 
 	}
 }
