@@ -17,7 +17,6 @@ $(document).ready( function(){
     });
 
     $('.banners-second').owlCarousel({
-        items:4,
         loop:true,
         margin:10,
         nav:true,
@@ -44,7 +43,6 @@ $(document).ready( function(){
     });
 
     $('.products-shoes').owlCarousel({
-        items:3,
         loop:true,
         margin:10,
         nav:true,
